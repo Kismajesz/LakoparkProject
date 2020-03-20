@@ -14,7 +14,13 @@ namespace LakoparkProject
     {
         public Form1()
         {
+            HappyLiving happyLiving = new HappyLiving("lakoparkok.txt");
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

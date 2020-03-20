@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace LakoparkProject
 {
-    class lakopark
+    class Lakopark
     {
         private int[,] hazak;
         private int maxHazSzam;
         private string nev;
         private int utcakSzama;
 
-        public lakopark(string nev, int utcakSzama , int maxHazSzam, int[,] hazak)
+        public Lakopark(string nev, int utcakSzama , int maxHazSzam, int[,] hazak)
         {
-            this.nev = nev;
-            this.utcakSzama = utcakSzama;
-            this.maxHazSzam = maxHazSzam;
-            this.hazak = hazak;
+            this.Nev = nev;
+            this.UtcakSzama = utcakSzama;
+            this.MaxHazSzam = maxHazSzam;
+            this.Hazak = hazak;
 
         }
 
-        public int[,] Hazak { get => hazak;  }
-        public int MaxHazSzam { get => maxHazSzam;  }
-        public string Nev { get => nev; }
-        public int UtcakSzama { get => utcakSzama; }
+        public int[,] Hazak { get => hazak; set => hazak = value; }
+        public int MaxHazSzam { get => maxHazSzam; set => maxHazSzam = value; }
+        public string Nev { get => nev; set => nev = value; }
+        public int UtcakSzama { get => utcakSzama; set => utcakSzama = value; }
     }
 }
