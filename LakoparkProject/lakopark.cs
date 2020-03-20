@@ -13,12 +13,13 @@ namespace LakoparkProject
         private string nev;
         private int utcakSzama;
 
-        public lakopark(int[,] hazak, int maxHazSzam, string nev, int utcakSzama)
+        public lakopark(string nev, int utcakSzama , int maxHazSzam, int[,] hazak)
         {
-            this.hazak = hazak;
-            this.maxHazSzam = maxHazSzam;
             this.nev = nev;
             this.utcakSzama = utcakSzama;
+            this.maxHazSzam = maxHazSzam;
+            this.hazak = hazak;
+
         }
 
         public int[,] Hazak { get => hazak;  }
